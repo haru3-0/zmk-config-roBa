@@ -4,6 +4,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 // OS設定を日本語キーボードのまま使用するための変換定義
+
 #define JP_DQUOTE       AT                // "
 #define JP_AMPERSAND    CARET             // &
 #define JP_QUOTE        AMPERSAND         // '
@@ -44,7 +45,6 @@
     //         <&kp LEFT_ARROW>,
     //         <&kp UP_ARROW>,
     //         <&kp DOWN_ARROW>;
-
     //     tick = <10>;
     //     wait-ms = <5>;
     //     tap-ms = <5>;
@@ -109,7 +109,7 @@
 &kp Q             &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))                      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 6 INT_HENKAN  &lt 2 SPACE  &lt_to_layer_0 3 INT_MUHENKAN      &kp BACKSPACE  &lt 1 ENTER                             &lt 5 ESC
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -170,12 +170,13 @@
 &trans  &trans        &trans        &trans        &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
             >;
         };
+
         Sym_Num {
             bindings = <
-&kp EXCLAMATION    &kp JP_DQUOTE    &kp HASH         &kp DOLLAR      &kp PERCENT                         &kp JP_AMPERSAND  &kp JP_QUOTE       &kp JP_EQUAL     &kp JP_CARET      &kp JP_YEN
-&kp NUMBER_1       &kp NUMBER_2     &kp NUMBER_3     &kp NUMBER_4    &kp NUMBER_5    &trans      &trans  &kp JP_PLUS       &kp JP_TILDE       &kp JP_PIPE      &kp JP_AT         &kp JP_COLON
-&kp NUMBER_6       &kp NUMBER_7     &kp NUMBER_8     &kp NUMBER_9    &kp NUMBER_0    &trans      &trans  &none             &kp JP_ASTERISK    &kp JP_BACKQUOTE &kp JP_UNDERSCORE &kp SEMICOLON
-&trans             &trans           &trans           &trans          &trans          &trans      &trans  &trans                                                                  &trans
+&kp EXCLAMATION  &kp JP_DQUOTE  &kp HASH      &kp DOLLAR    &kp PERCENT                       &kp JP_AMPERSAND  &kp JP_QUOTE     &kp JP_EQUAL      &kp JP_CARET       &kp JP_YEN
+&kp NUMBER_1     &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans      &trans  &kp JP_PLUS       &kp JP_TILDE     &kp JP_PIPE       &kp JP_AT          &kp JP_COLON
+&kp NUMBER_6     &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans      &trans  &none             &kp JP_ASTERISK  &kp JP_BACKQUOTE  &kp JP_UNDERSCORE  &kp SEMICOLON
+&trans           &trans         &trans        &trans        &trans        &trans      &trans  &trans                                                                  &trans
             >;
         };
     };
