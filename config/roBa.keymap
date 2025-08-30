@@ -67,18 +67,6 @@
     behaviors {
     };
 
-    　　
-　　//`~マーク
-    jis_GRAVE: jis_GRAVE {
-        compatible = "zmk,behavior-mod-morph";
-        label = "jis_GRAVE";
-        #binding-cells = <0>;
-        bindings = <&kp LS(LBKT)>, <&kp EQUAL>;
- //通常時でもレフトシフトするようにしてある。
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-        keep-mods = <(MOD_LSFT|MOD_RSFT)>;  //shiftを押しっぱなしにするための記述
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
