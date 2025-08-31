@@ -19,7 +19,6 @@
     //         <&kp LEFT_ARROW>,
     //         <&kp UP_ARROW>,
     //         <&kp DOWN_ARROW>;
-
     //     tick = <10>;
     //     wait-ms = <5>;
     //     tap-ms = <5>;
@@ -81,10 +80,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W     &kp E         &kp R                          &kp T                                                      &kp Y        &kp U  &lt 6 I    &kp O    &kp P
-&kp A             &kp S     &kp D         &lt 4 F                        &kp G        &kp LANG_ZENKAKUHANKAKU        &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X     &kp C         &kp V                          &kp B        &kp COLON                      &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&sk LCTRL         &kp CLCK  &kp LEFT_ALT  &lt_to_layer_0 7 INT_MUHENKAN  &lt 2 SPACE  &lt_to_layer_0 4 INT_KANA      &kp BACKSPACE  &lt 1 ENTER                             &lt 6 ESC
+&kp Q             &kp W     &kp E         &kp R                   &kp T                                                             &kp Y        &kp U  &lt 6 I    &kp O    &kp P
+&kp A             &kp S     &lt 3 D       &lt 4 F                 &kp G        &kp INTERNATIONAL_2                   &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
+&mt LEFT_SHIFT Z  &kp X     &kp C         &kp V                   &kp B        &kp COLON                             &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&sk LCTRL         &kp CLCK  &kp LEFT_ALT  &lt_to_layer_0 7 LSHFT  &lt 2 SPACE  &lt_to_layer_0 4 INTERNATIONAL_5      &kp BACKSPACE  &lt 1 ENTER                             &lt 6 ESC
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -111,7 +110,7 @@
         NUM {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &kp N7  &kp N8  &kp N9  &trans
-&trans  &trans  &kp A   &trans  &trans  &trans      &trans  &trans  &kp N4  &kp N5  &kp N6  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp N4  &kp N5  &kp N6  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp N0  &kp N1  &kp N2  &kp N3  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
