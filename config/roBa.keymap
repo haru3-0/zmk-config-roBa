@@ -59,7 +59,7 @@
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            bindings = <&to 3 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
     };
@@ -83,7 +83,7 @@
 &kp Q             &kp W     &kp E         &kp R                             &kp T                                                             &kp Y        &kp U  &lt 6 I    &kp O    &kp P
 &kp A             &kp S     &lt 3 D       &lt 4 F                           &kp G        &kp LC(LANGUAGE_5)                    &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
 &mt LEFT_SHIFT Z  &kp X     &kp C         &kp V                             &kp B        &kp COLON                             &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&sk LCTRL         &kp CLCK  &kp LEFT_ALT  &lt_to_layer_0 7 INTERNATIONAL_2  &lt 2 SPACE  &lt_to_layer_0 4 INTERNATIONAL_5      &kp BACKSPACE  &lt 1 ENTER                             &lt 6 ESC
+&sk LCTRL         &kp CLCK  &kp LEFT_ALT  &lt_to_layer_0 7 INTERNATIONAL_2  &lt 3 SPACE  &lt_to_layer_0 4 INTERNATIONAL_5      &kp BACKSPACE  &lt 0 ENTER                             &lt 6 ESC
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -120,7 +120,7 @@
             bindings = <
 &kp ESCAPE      &trans  &trans     &trans        &trans                                      &kp HOME        &kp END         &kp INSERT    &trans           &trans
 &kp LEFT_SHIFT  &trans  &trans     &trans        &trans          &trans         &kp F4       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp TAB
-&trans          &trans  &kp LC(S)  &trans        &trans          &trans         &kp LC(Z)    &kp RC(P)       &mkp MB1        &mkp MB2      &trans           &trans
+&trans          &trans  &kp LC(S)  &trans        &trans          &trans         &kp LC(Z)    &kp RC(P)       &mkp MB1        &mkp MB2      &lt 6 ESC        &trans
 &trans          &trans  &trans     &kp LEFT_WIN  &kp LEFT_SHIFT  &kp RSHFT      &kp PAGE_UP  &kp PAGE_DOWN                                                  &trans
             >;
 
